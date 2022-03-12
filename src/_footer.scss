@@ -1,8 +1,5 @@
 
 /* FOOTER */
-@mixin greybar {
-    width:100%;
-}
 
 .greybar {
     @include greybar();

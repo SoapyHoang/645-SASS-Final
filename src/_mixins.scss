@@ -1,0 +1,15 @@
+// Content mixin
+@mixin content-width {
+    width:460px;
+}
+
+// Footer mixin
+@mixin greybar {
+    width:100%;
+}
+
+// Navigation mixin
+@mixin nav {
+    height:190px;
+    float:left;
+}

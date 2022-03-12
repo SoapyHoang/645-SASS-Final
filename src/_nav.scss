@@ -1,9 +1,4 @@
 /* NAVIGATION */
-@mixin nav {
-    height:190px;
-    float:left;
-}
-
 figure                      {width:400px;@include nav();background:url(#{$imgPath}/logo.png) no-repeat 0 50px;display:block;margin:0;}
 nav                         {width:540px;@include nav();text-align:right;}
 nav ul                      {list-style-type:none;margin-top:95px;}
