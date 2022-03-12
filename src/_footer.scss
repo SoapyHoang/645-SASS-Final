@@ -1,0 +1,37 @@
+
+/* FOOTER */
+@mixin greybar {
+    width:100%;
+}
+
+.greybar {
+    @include greybar();
+    height:90px;
+    background:$greybar-bg;
+    clear:both;
+    padding-top:30px;
+}
+
+
+footer {
+    @include greybar();
+    height:120px;
+    background:$footer-bg;
+    text-align:center;
+    color:$white;
+    padding-top:50px;
+}
+
+
+.social-media               {margin:0 auto;width:165px;}
+.social-media div           {float:left;margin-right:5px;}
+.social-media a             {display:block;width:36px;height:36px;text-indent:-9999px;}
+
+
+.social-media div.one       {background:url(#{$imgPath}/social-media.png) 0 0;}
+.social-media div.two 	    {background:url(#{$imgPath}/social-media.png) -38px 0;}
+.social-media div.three     {background:url(#{$imgPath}/social-media.png) -76px 0;}
+.social-media div.four 	    {background:url(#{$imgPath}/social-media.png) -114px 0;}
+
+
+// do my mix-ins even work?

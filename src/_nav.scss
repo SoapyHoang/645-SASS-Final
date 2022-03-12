@@ -1,0 +1,12 @@
+/* NAVIGATION */
+@mixin nav {
+    height:190px;
+    float:left;
+}
+
+figure                      {width:400px;@include nav();background:url(#{$imgPath}/logo.png) no-repeat 0 50px;display:block;margin:0;}
+nav                         {width:540px;@include nav();text-align:right;}
+nav ul                      {list-style-type:none;margin-top:95px;}
+nav ul li                   {display:inline;font-size:0.8em;margin-right:10px;}
+nav ul li a                 {color: $red;text-decoration:none;letter-spacing:-0.01em;}
+nav ul li a:hover           {color:$white;}
