@@ -1,11 +1,8 @@
-
 /* FOOTER */
-
 .greybar {
     @include footer(90px, $greybar-bg, 30px);
     clear:both;
 }
-
 
 footer {
     @include footer(120px, $footer-bg, 50px);
@@ -13,16 +10,11 @@ footer {
     color:$white;
 }
 
-
 .social-media               {margin:0 auto;width:165px;}
 .social-media div           {float:left;margin-right:5px;}
 .social-media a             {display:block;width:36px;height:36px;text-indent:-9999px;}
-
 
 .social-media div.one       {@include logoImage('#{$imgPath}/social-media.png', 0, 0);}
 .social-media div.two 	    {@include logoImage('#{$imgPath}/social-media.png', -38px, 0);}
 .social-media div.three     {@include logoImage('#{$imgPath}/social-media.png', -76px, 0);}
 .social-media div.four 	    {@include logoImage('#{$imgPath}/social-media.png', -114px, 0);}
-
-
-// do my mix-ins even work?
