@@ -38,3 +38,9 @@
     padding-top: $padding-top;
     width:100%;
 }
+
+@mixin break($width) {
+    @media screen and (max-width:$width) {
+        @content
+    }
+}

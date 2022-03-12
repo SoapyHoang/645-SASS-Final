@@ -1,5 +1,5 @@
 /* MEDIA QUERIES */
-@media screen and (max-width:959px) {
+@include break(959px) {
     main 						{width:768px;}
     figure						{width:inherit;height:140px;float:none;background-position:center;}
     nav 						{width:inherit;height:50px;float:none;text-align:center;}
@@ -12,7 +12,7 @@
     #content #testimonials 		{width:46%;margin:0 2%;}
     }
 
-@media screen and (max-width:767px) {
+@include break(767px) {
     main 						{width:460px;}
     nav ul li					{font-size:0.8em;margin:0 5px;}
     header h1					{font-size:2em;}
@@ -24,7 +24,7 @@
     #content #testimonials 		{width:96%;margin:0 2%;float:none;}
 }
 
-@media screen and (max-width:459px) {
+@include break(459px) {
     main 						{width:300px;}
     figure						{background-size:contain;height:100px;}
     nav							{margin-bottom:40px !important;}
