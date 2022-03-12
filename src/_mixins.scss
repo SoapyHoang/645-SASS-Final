@@ -41,6 +41,13 @@
 
 @mixin break($width) {
     @media screen and (max-width:$width) {
+        @if $width <= 959px and $width > 767px {
+            main   {width:$main-width - 172px;}  // 768px
+        } @else if $width <= 767px and $width > 459px {
+            main   {width:$main-width - 480px;}  // 460px
+        } @else if $width <= 459px {
+            main   {width:$main-width - 640px;}  // 300px
+        }
         @content
     }
 }
