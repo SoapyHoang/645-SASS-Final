@@ -1,0 +1,30 @@
+{
+  "name": "645-sass-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "gulp sass",
+    "watch": "gulp sass:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoapyHoang/645-SASS-Final.git"
+  },
+  "author": "Sophia Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoapyHoang/645-SASS-Final/issues"
+  },
+  "homepage": "https://github.com/SoapyHoang/645-SASS-Final#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
