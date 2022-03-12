@@ -1,15 +1,40 @@
-// Content mixin
-@mixin content-width {
-    width:460px;
-}
-
-// Footer mixin
-@mixin greybar {
-    width:100%;
+// Logo mixin
+@mixin logoImage($url, $posx, $posy, $args...) {
+    background: url($url) $args;
+    background-position: $posx $posy;
 }
 
 // Navigation mixin
-@mixin nav {
+@mixin nav($width) {
+    width: $width;
     height:190px;
     float:left;
+}
+
+// Header mixin 
+@mixin headerStyle($color, $weight, $size) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: 0;
+}
+
+// Content mixin
+@mixin content ($float) {
+    float: $float;
+    width:460px;
+}
+
+@mixin text ($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Footer mixin
+@mixin footer($height, $background, $padding-top) {
+    height: $height;
+    background: $background;
+    padding-top: $padding-top;
+    width:100%;
 }

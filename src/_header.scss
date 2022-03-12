@@ -1,6 +1,6 @@
 /* HEADER */
 header                      {width:inherit;clear:both;text-align:center;padding-top:40px;}
 header img                  {max-width:100%;height:auto;}
-header h1                   {color: $red;font-weight:100;font-size:4em;line-height:0;}
-header h2                   {color: $white;font-weight:900;font-size:2.5em;line-height:0;margin-bottom:70px;}
-header h3                   {color: $gray; font-weight:400;font-size:2em;line-height:0;margin-bottom:50px;}
+header h1                   {@include headerStyle($red, 100, 4em)}
+header h2                   {@include headerStyle($white, 900, 2.5em);margin-bottom:70px;}
+header h3                   {@include headerStyle($gray, 400, 2em);margin-bottom:50px;}

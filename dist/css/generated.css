@@ -7,7 +7,8 @@ figure {
   width: 400px;
   height: 190px;
   float: left;
-  background: url(../images/logo.png) no-repeat 0 50px;
+  background: url("../images/logo.png") no-repeat;
+  background-position: 0 50px;
   display: block;
   margin: 0; }
 
@@ -16,23 +17,19 @@ nav {
   height: 190px;
   float: left;
   text-align: right; }
-
-nav ul {
-  list-style-type: none;
-  margin-top: 95px; }
-
-nav ul li {
-  display: inline;
-  font-size: 0.8em;
-  margin-right: 10px; }
-
-nav ul li a {
-  color: #E65C43;
-  text-decoration: none;
-  letter-spacing: -0.01em; }
-
-nav ul li a:hover {
-  color: #FFF; }
+  nav ul {
+    list-style-type: none;
+    margin-top: 95px; }
+    nav ul li {
+      display: inline;
+      font-size: 0.8em;
+      margin-right: 10px; }
+      nav ul li a {
+        color: #E65C43;
+        text-decoration: none;
+        letter-spacing: -0.01em; }
+      nav ul li a:hover {
+        color: #FFF; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 959px) {
@@ -136,19 +133,19 @@ main {
 
 /* FOOTER */
 .greybar {
-  width: 100%;
   height: 90px;
   background: #F5F6F6;
-  clear: both;
-  padding-top: 30px; }
+  padding-top: 30px;
+  width: 100%;
+  clear: both; }
 
 footer {
-  width: 100%;
   height: 120px;
   background: #30353D;
+  padding-top: 50px;
+  width: 100%;
   text-align: center;
-  color: #FFF;
-  padding-top: 50px; }
+  color: #FFF; }
 
 .social-media {
   margin: 0 auto;
@@ -165,16 +162,20 @@ footer {
   text-indent: -9999px; }
 
 .social-media div.one {
-  background: url(../images/social-media.png) 0 0; }
+  background: url("../images/social-media.png");
+  background-position: 0 0; }
 
 .social-media div.two {
-  background: url(../images/social-media.png) -38px 0; }
+  background: url("../images/social-media.png");
+  background-position: -38px 0; }
 
 .social-media div.three {
-  background: url(../images/social-media.png) -76px 0; }
+  background: url("../images/social-media.png");
+  background-position: -76px 0; }
 
 .social-media div.four {
-  background: url(../images/social-media.png) -114px 0; }
+  background: url("../images/social-media.png");
+  background-position: -114px 0; }
 
 /* HEADER */
 header {
@@ -231,8 +232,8 @@ header h3 {
   font-weight: 400; }
 
 #content #products {
-  width: 460px;
-  float: left; }
+  float: left;
+  width: 460px; }
 
 #content #products img {
   float: left;
@@ -245,5 +246,5 @@ header h3 {
   line-height: 1em; }
 
 #content #testimonials {
-  width: 460px;
-  float: right; }
+  float: right;
+  width: 460px; }
