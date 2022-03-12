@@ -42,8 +42,8 @@ nav {
         color: #E65C43;
         text-decoration: none;
         letter-spacing: -0.01em; }
-      nav ul li a:hover {
-        color: #FFF; }
+        nav ul li a:hover {
+          color: #FFF; }
 
 /* HEADER */
 header {

@@ -16,9 +16,9 @@ nav {
                 color: $red;
                 text-decoration:none;
                 letter-spacing:-0.01em;
-            }
-            a:hover {
-                color:$white;
+                &:hover {
+                    color:$white;
+                }
             }
         }
     }
