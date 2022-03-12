@@ -1,10 +1,12 @@
 var {src, dest, watch} = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
+var concat = require('gulp-concat')
 sass.compiler = require('node-sass');
 
 function css () {
     return src('src/*.scss')
         .pipe(sass())
+        .pipe(concat('generated.css'))
         .pipe(dest('dist/css'))
 };
 
